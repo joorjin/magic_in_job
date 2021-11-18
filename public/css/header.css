@@ -1,0 +1,148 @@
+@font-face{
+  font-family: dastnevis;
+  src: url('../fonts/dastnevis.otf') format('truetype');
+}
+#homeback {
+  direction:rtl;
+	text-align:right;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+     align-items: center;
+    height: 115vh;
+    position: relative;
+    padding-top: 10em;
+    font-family:dastnevis;
+
+  }
+  .homeback-text{
+      position: relative;
+      top: 150px;
+  }
+  
+  #homeback h1 {
+    color: #ffffff;
+    font-size: 6em;
+    line-height: 90px;
+  }
+  
+  #homeback p {
+    margin-top: 10%;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+  }
+  #homeback .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+  }
+  
+  #homeback video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
+
+
+  @media only screen and (max-width:1200px){
+    .homeback-text{
+      top: 100px;
+  }
+  #homeback h1 {
+
+    font-size: 50px;
+    line-height: 90px;
+  }
+  }
+
+  @media only screen and (max-width:700px){
+    .homeback-text{
+        top: 70px;
+    }
+    #homeback h1 {
+
+      font-size: 40px;
+      line-height: 90px;
+    }
+    #homeback p {
+      font-size: 18px;
+    }
+  }
+
+
+@media only screen and (max-width:500px){
+    .homeback-text{
+      top: 40px;
+    }
+    #homeback h1 {
+
+      font-size: 30px;
+      line-height: 60px;
+    }
+    #homeback p {
+      font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:350px){
+  .homeback-text{
+    top: 25px;
+  }
+  #homeback h1 {
+
+    font-size: 25px;
+    line-height: 80px;
+  }
+  #homeback p {
+    font-size: 12px;
+  }
+
+}
+
+
+
+  #homeback .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 104, 104, 0.486);
+  }
+  
+  #homeback video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+    transition: 1s opacity;
+  }
+  .parallax-section {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+  }

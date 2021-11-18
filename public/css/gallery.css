@@ -1,0 +1,80 @@
+
+.gallery{
+    width: 100%;
+    overflow: hidden;
+    direction: ltr;
+    text-align: right;
+}
+
+.h2insata {
+    margin-top: 150px;
+    margin-bottom: -80px;
+    margin-right: 50px;
+    font-size: 35px;
+    font-weight: bolder;
+}
+.gallery .post {
+    position: relative;
+    float: left;
+    width: 33%;
+    /* margin-bottom: 50px; */
+}
+.gallery .post article{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.gallery .post article .hover{
+    position: relative;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    left: -0%;
+    top: -0%;
+    z-index: 2;
+    transition:0.2s ;
+}
+.gallery .post article .hover img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .post article .hover:hover{
+    width: 130%;
+    height: 500px;
+    left: -10%;
+    top: -10%;
+    z-index: 1;
+}
+.gallery .post article .hover img:hover{
+
+    opacity: 0.45;
+}
+
+@media ( max-width:992px) {
+
+    .h2insata {
+        margin-top: 200px;
+    }
+
+}
+
+@media ( max-width:1250px) {
+
+    .gallery .post {
+        width: 50%;
+    }
+
+}
+
+@media ( max-width:768px) {
+    .h2insata {
+        margin-top: 10px;
+    }
+    .gallery .post {
+        width: 100%;
+    }
+
+}
