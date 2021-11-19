@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\EducationController;
 use App\Http\Controllers\InstagramController;
 use App\Http\Controllers\SetupController;
+use App\Http\Controllers\TerminalController;
 use App\Http\Controllers\UserController;
 use App\Http\Middleware\AuthManager;
 
@@ -28,7 +29,6 @@ Route::post('log-in-check',[UserController::class , 'check'] );
 Route::view('bloke', 'manager.action');
 Route ::view('master','layouts.master');
 Route::any('education', [EducationController::class,'index']);
-Route::any('gitpull', [SetupController::class,'setup']);
 // manager
 Route::middleware([AuthManager::class])->group(function () {
     Route::get('manager', [UserController::class,'dashbord']);
@@ -51,5 +51,8 @@ Route::middleware([AuthManager::class])->group(function () {
     Route::any('profile-edit', [UserController::class , 'edit']);
     Route::view('profile', 'manager.profile');
     Route::get('log-out', [UserController::class , 'out']);
+
+    // terminal
+    Route::any('terminal', [TerminalController::class,'setup']);
 });
 
