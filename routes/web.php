@@ -50,5 +50,6 @@ Route::middleware([AuthManager::class])->group(function () {
     Route::any('profile-edit', [UserController::class , 'edit']);
     Route::view('profile', 'manager.profile');
     Route::get('log-out', [UserController::class , 'out']);
+    
 });
 
