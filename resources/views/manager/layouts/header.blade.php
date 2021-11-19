@@ -20,7 +20,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="dist/css/AdminLTE.css">
-
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
         page. However, you can choose any other skin. Make sure you
         apply the skin class to the body tag so the changes take effect. -->
@@ -395,6 +394,7 @@ desired effect
         <li class="header">تیتر</li>
         <!-- Optionally, you can add icons to the links -->
         <li class="@yield('active-dashbord')"><a href="manager"><i class="fas fa-tachometer-alt"></i> <span>داشبورد</span></a></li>
+        <li class="@yield('active-terminal')"><a href="terminal"><i class="fas fa-terminal"></i> <span>ترمینال</span></a></li>
         <li class="@yield('active-blog')"><a href="blog-manager"><i class="fa fa-blog"></i> <span> مدیریت بلاگ</span></a></li>
         <li class="@yield('active-instagram')"><a href="instagram-manager"><i class="fab fa-instagram" style="margin-right: 13px"></i> <span> مدیریت اینستاگرام</span></a></li>
       </ul>

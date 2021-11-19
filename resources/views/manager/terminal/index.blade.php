@@ -3,7 +3,7 @@
 جادو در کسب و کار | پشتیبانی و خدمات وب
 @endsection
 
-@section('active-blog')
+@section('active-terminal')
     active
 @endsection
 
@@ -56,10 +56,12 @@
         -------------------------->
     <label for="text">
         <div class="all">
-            <p>{{ $command }}</p>
-            <br>
-            <p><b style="color: #f00;">{{$response}}</b> {{ $buffer }}</p>
-            <br>
+            @isset($command)
+                <p>{{ $command }}</p>
+                <br>
+                <p><b style="color: #f00;">{{$response}}</b> {{ $buffer }}</p>
+                <br>
+            @endisset
             <form method="POST">
                 @csrf
                 <input type="text" id="text" name="command">
