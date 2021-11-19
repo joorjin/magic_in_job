@@ -245,14 +245,7 @@ jQuery(function ($) {
 });
 	</script>
 
-<script>
-    $(document).ready(function () {
-        setTimeout(function(){
-            $('.bootstrapLoad').attr("href","css/bootstrap.min.css");
-            $('.style').attr("href","css/style.css?v=1.1.3");
-        }, 100);
-    });
-</script>
+
 
 
 @yield('script')

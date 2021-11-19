@@ -24,30 +24,30 @@
 
 <!-- center -->
 <div class="center-blog-list">
-    
+
     <div class="tag-sel">
         <select name="tag" id="tag" onchange="location=this.value;">
             <?php $tag = []; $i = 0 ?>
             @foreach ($blog as $item)
-                <?php 
+                <?php
                     $tag[$i]= $item->tag;
                     $filter_tag = array_unique($tag);
-                    $i++; 
+                    $i++;
                 ?>
             @endforeach
             <?php
             $filter_tag = array_values($filter_tag);
-               $count_filter_tag = count($filter_tag); 
+               $count_filter_tag = count($filter_tag);
                ?>
                 <option value="/blog">انتخاب دسته بندی</option>
                <?php
-              for ($i=0; $i < $count_filter_tag ; $i++) { 
-                ?>  
-                <option value="/blog/<?php echo(str_replace(" ", "-",$filter_tag[$i])); ?>"> {{ $filter_tag[$i] }}</option>
-        
+              for ($i=0; $i < $count_filter_tag ; $i++) {
+                ?>
+                <option value="/blog?tag=<?php echo(str_replace(" ", "-",$filter_tag[$i])); ?>"> {{ $filter_tag[$i] }}</option>
+
             <?php } ?>
 
-            
+
         </select>
     </div>
     <div class="all">
@@ -74,13 +74,13 @@
         @php
             $zaman=$item->created_at;
             $zaman=new Verta($zaman);
-            
+
         @endphp
             <p id="year">/<?php convertToPersianNumber($zaman->year) ?></p>
             <p id="month">/<?php convertToPersianNumber($zaman->month) ?></p>
             <p id="day"><?php convertToPersianNumber($zaman->day) ?></p>
         </div>
-        
+
     </div>
 <!-- end post -->
 @endforeach
@@ -88,7 +88,7 @@
     </div>
     <style>
         .justify-between{
-    
+
             width: 200px;
             height: 50px;
             margin: 0 auto;

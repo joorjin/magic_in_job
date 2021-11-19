@@ -39,11 +39,11 @@
     <!-- header style -->
     <link rel="stylesheet" href="css/header.css">
     <!-- Bootstrap CSS -->
-    <link class="bootstrapLoad" rel="stylesheet" href="" />
+    <link class="bootstrapLoad" rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Pogo Slider CSS -->
     <link rel="stylesheet" href="css/pogo-slider.min.css" />
     <!-- Site CSS -->
-    <link class="style" rel="stylesheet" href="" />
+    <link class="style" rel="stylesheet" href="css/style.css?v=1.1.3" />
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
@@ -85,7 +85,7 @@
              <div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
                  <ul class="navbar-nav">
                      <li><a class="nav-link active" href="/" style="background:#f2184f;color:#fff;">صفحه اصلی</a></li>
-                     <li><a class="nav-link" href="/education"> آموزش ها </a></li>
+                     {{-- <li><a class="nav-link" href="/education"> آموزش ها </a></li> --}}
                      <li><a class="nav-link" href="/insta"> اینستاگرام ما</a></li>
                      <li><a class="nav-link" href="/blog"> بلاگ </a></li>
                      <li><a class="nav-link" href="#footer-box">ارتباط با ما</a></li>

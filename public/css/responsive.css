@@ -481,6 +481,9 @@ select {
 
 @media (min-width: 2000px)
 {
+    .top-header{
+        position: relative;
+    }
     .top-header.fixed-menu {
         max-width: 2000px;
         left: calc(50% - 1000px);
@@ -492,3 +495,16 @@ select {
         right: calc(50% - 1000px);
     }
 }
+@media (max-width: 992px){
+    .tabmod{
+        height: 50px;
+    }
+}
+
+@media (max-width: 767px){
+    .tabmod{
+        height: 0px;
+    }
+}
+
+

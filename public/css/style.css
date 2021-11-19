@@ -620,7 +620,8 @@ a.navbar-brand  img{
 }
 
 .img-responsive {
-	max-width: 100%;
+	width: 600px;
+    height: 380px;
 }
 
 .slide_text h3 {
