@@ -36,7 +36,7 @@
                             <img src="images/social2.png" alt="ایمیل">
                         </div>
                         <div class="full white_fonts">
-                            <p>info@ariawebgostar.ir</p>
+                            <p>info@magic-in-job.ir</p>
                         </div>
                     </div>
                     <div class="col-md-3">
@@ -51,8 +51,8 @@
                        <ul class="full social_icon margin-top_20">
                             <li><a href="https://www.instagram.com/magic_in_job"><i class="fa fa-instagram"></i></a></li>
                             <li><a href="https://twitter.com/magic_in_job"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.linkedin.com/in/azimi-dev"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://t.me/azimi_dev"><i class="fa fa-telegram"></i></a></li>
+                            {{-- <li><a href="https://www.linkedin.com/in/azimi-dev"><i class="fa fa-linkedin"></i></a></li> --}}
+                            <li><a href="https://t.me/public_relations_magic"><i class="fa fa-telegram"></i></a></li>
                         </ul>
                     </div>
                 </div>
